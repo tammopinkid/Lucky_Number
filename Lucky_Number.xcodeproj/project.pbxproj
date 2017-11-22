@@ -12,6 +12,10 @@
 		B91684F31FBC08B300C10F93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B91684F11FBC08B300C10F93 /* Main.storyboard */; };
 		B91684F51FBC08B300C10F93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B91684F41FBC08B300C10F93 /* Assets.xcassets */; };
 		B91684F81FBC08B300C10F93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B91684F61FBC08B300C10F93 /* LaunchScreen.storyboard */; };
+		B91685001FBC131D00C10F93 /* RoundLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91684FF1FBC131D00C10F93 /* RoundLabel.swift */; };
+		B91685021FBC186B00C10F93 /* Reload.png in Resources */ = {isa = PBXBuildFile; fileRef = B91685011FBC186B00C10F93 /* Reload.png */; };
+		B91685041FBC191900C10F93 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91685031FBC191900C10F93 /* RoundButton.swift */; };
+		B91685061FBC312900C10F93 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91685051FBC312900C10F93 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		B91684F41FBC08B300C10F93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B91684F71FBC08B300C10F93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B91684F91FBC08B300C10F93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B91684FF1FBC131D00C10F93 /* RoundLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundLabel.swift; sourceTree = "<group>"; };
+		B91685011FBC186B00C10F93 /* Reload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reload.png; sourceTree = SOURCE_ROOT; };
+		B91685031FBC191900C10F93 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		B91685051FBC312900C10F93 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +64,14 @@
 			children = (
 				B91684ED1FBC08B300C10F93 /* AppDelegate.swift */,
 				B91684EF1FBC08B300C10F93 /* ViewController.swift */,
+				B91685051FBC312900C10F93 /* ResultViewController.swift */,
 				B91684F11FBC08B300C10F93 /* Main.storyboard */,
+				B91685031FBC191900C10F93 /* RoundButton.swift */,
+				B91684FF1FBC131D00C10F93 /* RoundLabel.swift */,
 				B91684F41FBC08B300C10F93 /* Assets.xcassets */,
 				B91684F61FBC08B300C10F93 /* LaunchScreen.storyboard */,
 				B91684F91FBC08B300C10F93 /* Info.plist */,
+				B91685011FBC186B00C10F93 /* Reload.png */,
 			);
 			path = Lucky_Number;
 			sourceTree = "<group>";
@@ -123,6 +135,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B91685021FBC186B00C10F93 /* Reload.png in Resources */,
 				B91684F81FBC08B300C10F93 /* LaunchScreen.storyboard in Resources */,
 				B91684F51FBC08B300C10F93 /* Assets.xcassets in Resources */,
 				B91684F31FBC08B300C10F93 /* Main.storyboard in Resources */,
@@ -136,7 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B91685061FBC312900C10F93 /* ResultViewController.swift in Sources */,
+				B91685041FBC191900C10F93 /* RoundButton.swift in Sources */,
 				B91684F01FBC08B300C10F93 /* ViewController.swift in Sources */,
+				B91685001FBC131D00C10F93 /* RoundLabel.swift in Sources */,
 				B91684EE1FBC08B300C10F93 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

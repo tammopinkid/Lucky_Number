@@ -1,24 +1,282 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0r4-6T-YqB">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Select Lucky Number-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lucky_Number" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acW-dG-0yg" customClass="RoundLabel" customModule="Lucky_Number" customModuleProvider="target">
+                                <rect key="frame" x="31" y="451" width="313" height="66"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="A3u-J2-KF9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="35"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.76045535200000003" green="0.76798461289999997" blue="0.76798461289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shake For Your" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WE7-lK-Tam">
+                                <rect key="frame" x="27" y="101" width="321" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                <color key="textColor" red="0.1027876264866372" green="0.59268364405104834" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICp-q7-zJk" customClass="RoundButton" customModule="Lucky_Number" customModuleProvider="target">
+                                <rect key="frame" x="46" y="577" width="283" height="44"/>
+                                <color key="backgroundColor" red="0.16078431372549018" green="0.71372549019607845" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="oOM-y9-khe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                <state key="normal" title="Check Lucky Draw">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.011764705882352941" green="0.60784313725490191" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="ycb-Rc-eJy" kind="push" identifier="segue" id="n3f-QV-R86"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lucky Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UgR-pI-cdh">
+                                <rect key="frame" x="27" y="141" width="321" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                <color key="textColor" red="0.10278762650000001" green="0.59268364409999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Reload" translatesAutoresizingMaskIntoConstraints="NO" id="mGd-YZ-is2">
+                                <rect key="frame" x="94" y="207" width="187" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Uhr-YB-HBX"/>
+                                    <constraint firstAttribute="width" constant="187" id="exw-b7-TBQ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89795356989999997" green="0.8981010318" blue="0.89792209860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UgR-pI-cdh" firstAttribute="top" secondItem="WE7-lK-Tam" secondAttribute="bottom" constant="4" id="97o-Wr-zmD"/>
+                            <constraint firstItem="WE7-lK-Tam" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="37" id="A0v-6y-UON"/>
+                            <constraint firstItem="mGd-YZ-is2" firstAttribute="top" secondItem="UgR-pI-cdh" secondAttribute="bottom" constant="30" id="AqK-vx-gz1"/>
+                            <constraint firstItem="acW-dG-0yg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="GSD-WY-Och"/>
+                            <constraint firstItem="mGd-YZ-is2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="Ijj-1N-Afb"/>
+                            <constraint firstItem="ICp-q7-zJk" firstAttribute="top" secondItem="acW-dG-0yg" secondAttribute="bottom" constant="60" id="Kcc-BS-EzR"/>
+                            <constraint firstItem="ICp-q7-zJk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="Q4M-dn-L0N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ICp-q7-zJk" secondAttribute="bottom" constant="46" id="Qk0-YR-dZv"/>
+                            <constraint firstItem="UgR-pI-cdh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="cuP-rQ-3yX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WE7-lK-Tam" secondAttribute="trailing" constant="27" id="er7-Rc-ndr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UgR-pI-cdh" secondAttribute="trailing" constant="27" id="fIj-FF-Zpo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mGd-YZ-is2" secondAttribute="trailing" constant="94" id="iUP-BL-KRL"/>
+                            <constraint firstItem="WE7-lK-Tam" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="mSZ-oP-rjd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ICp-q7-zJk" secondAttribute="trailing" constant="46" id="tqM-Vr-Aal"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="acW-dG-0yg" secondAttribute="trailing" constant="31" id="ziT-zq-84c"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Select Lucky Number" id="ka9-cb-YOJ"/>
+                    <connections>
+                        <outlet property="shakedNumLabel" destination="acW-dG-0yg" id="EL9-S3-6ch"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="476" y="133.5832083958021"/>
+        </scene>
+        <!--Lucky Draw Result-->
+        <scene sceneID="FEE-Ms-OmS">
+            <objects>
+                <viewController id="ycb-Rc-eJy" customClass="ResultViewController" customModule="Lucky_Number" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yqo-rP-X8D">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lucky Draw Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5aG-XS-cmW">
+                                <rect key="frame" x="19" y="89" width="337" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="kfd-ew-Ppn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                <color key="textColor" red="0.10278762650000001" green="0.59268364409999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Win!!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ilc-CY-ais">
+                                <rect key="frame" x="27" y="137" width="321" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="vuz-9U-tOF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                <color key="textColor" red="0.95678251981735229" green="0.612498939037323" blue="0.26026767492294312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08, 25, 31, 89, 93" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wE2-DE-a8H">
+                                <rect key="frame" x="27" y="321" width="321" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="LVv-Zm-43z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="31"/>
+                                <color key="textColor" red="0.32099066840277779" green="0.612498939037323" blue="0.26026767492294312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OPM-g2-QMj" customClass="RoundLabel" customModule="Lucky_Number" customModuleProvider="target">
+                                <rect key="frame" x="31" y="495" width="313" height="66"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="5ms-vv-Ecd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="35"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.76045535200000003" green="0.76798461289999997" blue="0.76798461289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15C-Dk-xPb" customClass="RoundButton" customModule="Lucky_Number" customModuleProvider="target">
+                                <rect key="frame" x="46" y="586" width="283" height="44"/>
+                                <color key="backgroundColor" red="0.16078431369999999" green="0.71372549019999998" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="phL-Ri-qOs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                <state key="normal" title="New Lucky Draw">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.01176470588" green="0.60784313729999995" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="backToMain:" destination="ycb-Rc-eJy" eventType="touchUpInside" id="Mgt-TR-4Sp"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="M6H-Oe-XY5">
+                                <rect key="frame" x="94" y="188" width="187" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="t6g-dW-d7Y"/>
+                                    <constraint firstAttribute="width" constant="187" id="zkY-el-vaO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Selected Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmY-N2-UTE">
+                                <rect key="frame" x="31" y="464" width="313" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="mPB-3l-wcr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89795356989999997" green="0.8981010318" blue="0.89792209860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZCO-Ek-gIh" firstAttribute="trailing" secondItem="5aG-XS-cmW" secondAttribute="trailing" constant="19" id="0es-Bf-E3e"/>
+                            <constraint firstItem="ZCO-Ek-gIh" firstAttribute="bottom" secondItem="15C-Dk-xPb" secondAttribute="bottom" constant="37" id="4p6-xO-7nZ"/>
+                            <constraint firstItem="ZCO-Ek-gIh" firstAttribute="trailing" secondItem="ilc-CY-ais" secondAttribute="trailing" constant="27" id="5Y6-YZ-08s"/>
+                            <constraint firstItem="5aG-XS-cmW" firstAttribute="top" secondItem="ZCO-Ek-gIh" secondAttribute="top" constant="25" id="79h-ji-yDg"/>
+                            <constraint firstItem="ilc-CY-ais" firstAttribute="leading" secondItem="ZCO-Ek-gIh" secondAttribute="leading" constant="27" id="AqM-7b-Jvm"/>
+                            <constraint firstItem="ZCO-Ek-gIh" firstAttribute="trailing" secondItem="15C-Dk-xPb" secondAttribute="trailing" constant="46" id="LqB-q0-eV4"/>
+                            <constraint firstItem="OPM-g2-QMj" firstAttribute="leading" secondItem="ZCO-Ek-gIh" secondAttribute="leading" constant="31" id="UbB-kJ-D3Y"/>
+                            <constraint firstItem="wE2-DE-a8H" firstAttribute="leading" secondItem="ZCO-Ek-gIh" secondAttribute="leading" constant="27" id="VhR-tG-JTk"/>
+                            <constraint firstItem="15C-Dk-xPb" firstAttribute="top" secondItem="OPM-g2-QMj" secondAttribute="bottom" constant="25" id="a4a-rP-vEv"/>
+                            <constraint firstItem="ZCO-Ek-gIh" firstAttribute="trailing" secondItem="M6H-Oe-XY5" secondAttribute="trailing" constant="94" id="aE3-hh-S7C"/>
+                            <constraint firstItem="OPM-g2-QMj" firstAttribute="top" secondItem="rmY-N2-UTE" secondAttribute="bottom" constant="10" id="dwG-kt-uBq"/>
+                            <constraint firstItem="ZCO-Ek-gIh" firstAttribute="trailing" secondItem="OPM-g2-QMj" secondAttribute="trailing" constant="31" id="hWh-Zv-SiV"/>
+                            <constraint firstItem="ilc-CY-ais" firstAttribute="top" secondItem="5aG-XS-cmW" secondAttribute="bottom" constant="12" id="lVj-xG-7ZD"/>
+                            <constraint firstItem="rmY-N2-UTE" firstAttribute="leading" secondItem="ZCO-Ek-gIh" secondAttribute="leading" constant="31" id="nVN-FB-LVC"/>
+                            <constraint firstItem="5aG-XS-cmW" firstAttribute="leading" secondItem="ZCO-Ek-gIh" secondAttribute="leading" constant="19" id="nei-DZ-eqY"/>
+                            <constraint firstItem="ZCO-Ek-gIh" firstAttribute="trailing" secondItem="rmY-N2-UTE" secondAttribute="trailing" constant="31" id="nnT-Cq-iFF"/>
+                            <constraint firstItem="M6H-Oe-XY5" firstAttribute="leading" secondItem="ZCO-Ek-gIh" secondAttribute="leading" constant="94" id="o3L-ox-vlb"/>
+                            <constraint firstItem="M6H-Oe-XY5" firstAttribute="top" secondItem="ilc-CY-ais" secondAttribute="bottom" constant="15" id="qX8-P9-r6i"/>
+                            <constraint firstItem="ZCO-Ek-gIh" firstAttribute="trailing" secondItem="wE2-DE-a8H" secondAttribute="trailing" constant="27" id="rCD-PG-8MB"/>
+                            <constraint firstItem="wE2-DE-a8H" firstAttribute="top" secondItem="M6H-Oe-XY5" secondAttribute="bottom" constant="5" id="uHW-95-3jF"/>
+                            <constraint firstItem="15C-Dk-xPb" firstAttribute="leading" secondItem="ZCO-Ek-gIh" secondAttribute="leading" constant="46" id="yFq-sr-NPB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZCO-Ek-gIh"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Lucky Draw Result" id="nEP-5V-0nu"/>
+                    <connections>
+                        <outlet property="newLuckyDrawBtn" destination="15C-Dk-xPb" id="oio-pF-Osc"/>
+                        <outlet property="randomList" destination="wE2-DE-a8H" id="hu9-xz-fHA"/>
+                        <outlet property="resultImage" destination="M6H-Oe-XY5" id="crF-u5-2Cz"/>
+                        <outlet property="resultLabel" destination="ilc-CY-ais" id="rTB-DC-M5a"/>
+                        <outlet property="selectedNumLabel" destination="OPM-g2-QMj" id="UEW-Ed-5If"/>
+                        <segue destination="yif-p6-qGY" kind="unwind" identifier="unwindSegueToMain" unwindAction="unwindToMainWithSegue:" id="EJN-lM-gQI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FFa-Mq-x6a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="yif-p6-qGY" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1380" y="133.5832083958021"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tUx-53-kob">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0r4-6T-YqB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XuT-eG-GXp">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="eqp-ul-LtR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jcy-Bl-ttg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-346" y="134"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Reload" width="512" height="512"/>
+        <image name="star" width="128" height="128"/>
+    </resources>
 </document>
